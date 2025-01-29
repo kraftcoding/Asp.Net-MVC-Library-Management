@@ -24,8 +24,8 @@ namespace Asp.Net_MVC_Library_Management.Controllers
             {
                 if (model.Email.ToString() == "admin" && model.Password.ToLower() == "admin")
                 {
-                    //FormsAuthentication.SetAuthCookie(model.Email, true);
-                    //Response.Redirect("/Admin/Index");
+                    FormsAuthentication.SetAuthCookie(model.Email, true);
+                    Response.Redirect("/Admin/Index");
                 }
             }
             return View();
